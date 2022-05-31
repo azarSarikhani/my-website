@@ -1,0 +1,239 @@
+*{
+    margin:0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+html{
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: #999;
+}
+  
+
+
+/* CSS for the header's nav bar*/
+button#hamburgerBtn{
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2.4rem;
+    cursor: pointer;
+    padding: 0 30px 0 2vw;
+}
+
+nav{
+    background-color: #2E5D6C;
+
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+list-style-type: none;
+}
+
+nav a {
+    display: block;
+    padding: .8rem 0;
+    color: #eee;
+    text-align: center;
+    text-decoration:none;
+}
+
+nav li.active{
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+nav a:hover{
+    background-color:rgba(0, 0, 0, 0.2);
+}
+
+nav ul.open {
+    display: block;
+}
+
+nav ul {
+    display: none;
+}
+
+
+@media only screen and (min-width: 768px){
+ nav button {
+     display: none;
+
+ }
+
+ nav ul {
+     display: block;
+ }
+ nav li{
+     float:left;
+     width: 25%;
+ }
+
+}
+
+@media only screen and (min-width: 1024px){
+nav li{
+    width:auto;
+}
+nav a {
+    padding: .7rem 1rem;
+}
+}
+
+/*End of CSS for the nav bar*/
+
+
+/* Shared CSS for header and footer*/
+
+.row{
+    clear:both;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+/* End of shared CSS for header and footer*/
+
+
+/* grid rules for the footer*/
+
+.column{
+    float: left;
+    padding: 0 2vw;
+}
+
+.small-12{
+    width: 100%;
+}
+
+footer {
+    background-color:#2E5D6C;
+    font-size: 1.2rem;
+
+}
+footer h2{
+    font-style: italic;
+    text-transform: uppercase;
+    margin: 1rem 0 .3rem 0;
+}
+
+/* end of CSS rules for the footer*/
+
+aside {
+    margin-top: 3%;
+
+    
+}
+
+article{
+   
+    width: 75%;
+    margin-bottom: 2em;
+
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+
+   }
+
+
+p{
+    margin: 0.5em 0 0.5em 0;
+}
+
+
+@media only screen and (min-width: 768px){
+    main{
+        display: flex;
+    }
+    aside{
+        margin-top: 2%;
+    }
+    .medium-6{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .large-3{
+        width: 25%;
+    }
+}
+
+
+
+/* old header settings
+header{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:#2E5D6C;
+    padding: 10px;
+}
+
+nav a:visited, 
+nav a:link{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav > ul {
+    display: inline;
+    padding: 0;
+}
+
+nav > ul > li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 5px 0 5px;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: inherit;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+end of header settings*/
+
+
+/* old footer setting
+footer {
+    padding: 15 px;
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#2E5D6C;
+    padding: 10px;
+}
+*/

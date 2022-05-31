@@ -1,0 +1,80 @@
+
+aside {
+
+    text-align: center;
+    max-width: 400px;
+    max-height: 500px;
+
+}
+
+aside img{
+    filter : grayscale(50%);
+}
+
+article{
+    padding-top: 3.5em;
+    width: 75%;
+
+}
+
+.columns{
+    display: flex;
+}
+
+@media only screen and (min-width: 768px){
+
+
+    .columns-desktop{
+        display: flex;
+    }
+
+    aside{
+        margin: 2% 0;
+    }
+    
+    }
+
+ 
+    
+    /* these style rules are only for the part section of the about me page*/
+    
+    .part{
+        width: 200px;
+        padding: 10px;
+        margin: 10px;
+        background-color: rgb(213, 244, 231);
+        border: solid 1px #000;
+        justify-content: space-between;
+        flex-direction: column;
+        display: flex;
+    
+    }
+    
+    .part img{
+        width: 100%;
+    }
+    
+    .part .title{
+        font-weight: bold;
+    }
+    .part .columns{
+        width: 100%;
+    }
+    
+    .part .timeStamp{
+        text-align: right;
+    }
+    
+    .part .columns div{
+        width: 50%;
+    }
+    
+    .part button{
+        background-color:rgb(4, 56, 4);
+        padding: 10px;
+        border: solid 1px rgb(4, 56, 4);
+        border-radius: 3px;
+        color: #fff;
+        
+        
+    }

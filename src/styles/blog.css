@@ -1,0 +1,100 @@
+/* CSS for the nav bar*/
+button#hamburgerBtn{
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2.4rem;
+    cursor: pointer;
+    padding: 0 30px 0 2vw;
+}
+
+nav{
+    background-color: #2E5D6C;
+
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+list-style-type: none;
+}
+
+nav a {
+    display: block;
+    padding: .8rem 0;
+    color: #eee;
+    text-align: center;
+    text-decoration:none;
+}
+
+nav li.active{
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+nav a:hover{
+    background-color:rgba(0, 0, 0, 0.2);
+}
+
+nav ul.open {
+    display: block;
+}
+
+nav ul {
+    display: none;
+}
+
+.row{
+    clear:both;
+}
+
+.clearfix::after{
+content: "";
+display: table;
+clear: both;
+}
+
+
+@media only screen and (min-width: 768px){
+ nav button {
+     display: none;
+
+ }
+
+ nav ul {
+     display: block;
+ }
+ nav li{
+     float:left;
+     width: 25%;
+ }
+
+}
+
+@media only screen and (min-width: 1024px){
+nav li{
+    width:auto;
+}
+nav a {
+    padding: .7rem 1rem;
+}
+}
+
+/*End of CSS for the nav bar*/
+
+.page-content{
+    margin-left: 1em;
+    margin-bottom: 10em;
+    margin-top: 2em;
+}
+
+/* to keep the footer in the bottom while there is not much content in this page yet*/
+@media only screen and (min-width: 1024px){
+    .page-content{
+  
+        margin-bottom: 18em;
+    
+    }
+}
